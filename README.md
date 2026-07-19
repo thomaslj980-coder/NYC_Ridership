@@ -78,7 +78,7 @@ Season alone is a poor standalone predictor — the seasonal linear regression p
 4. Long-Term Ridership Trends (30-day rolling averages)
 5. Crowdedness by Day of Week
 6. Holiday vs. Non-Holiday Ridership
-7. Baseline Model — Predicting Subway Ridership from Day & Holiday
+7. Baseline Model: Predicting Subway Ridership from Day & Holiday
 8. Predicting Bridge & Tunnel Traffic from Transit Ridership
 9. Seasonal Effects (Linear Regression)
 10. Predicting the Least-Crowded Mode (Random Forest)
