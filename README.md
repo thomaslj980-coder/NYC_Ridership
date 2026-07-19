@@ -44,10 +44,10 @@ Five regression models were compared for predicting car traffic from other trans
 | Decision Tree | 57,324 | 0.825 |
 | **Random Forest** | **44,832** | **0.893** |
 
-Random Forest explains 89% of variance in bridge traffic from transit ridership alone — suggesting a strong inverse relationship between public transit usage and car traffic.
+Random Forest explains 89% of variance in bridge traffic from transit ridership alone, suggesting a strong inverse relationship between public transit usage and car traffic.
 
 ### Seasonal Effects
-Season alone is a poor standalone predictor — the seasonal linear regression produced negative R² on test data for most modes (e.g. Subway test R² = -1.27). Ridership variance is dominated by the pandemic recovery period rather than seasonal patterns, which limits how much season-only models can generalise.
+Season alone is a poor standalone predictor. The seasonal linear regression produced negative R² on test data for most modes (e.g. Subway test R² = -1.27). Ridership variance is dominated by the pandemic recovery period rather than seasonal patterns, which limits how much season-only models can generalise.
 
 ### Least-Crowded Mode Classification
 
@@ -56,7 +56,7 @@ Season alone is a poor standalone predictor — the seasonal linear regression p
 | Inner-City Random Forest | Subway, Bus, Access-A-Ride, SIR | 65% |
 | Outer-City Random Forest | Metro-North, LIRR, Bridges/Tunnels | 78% |
 
-**SIR is the least crowded inner-city mode on ~90% of days.** Metro-North is the least crowded outer-city option on ~86% of days. However, accuracy figures are inflated by class imbalance — SIR dominates inner-city labels (1,610 of 1,776 days) and Metro-North dominates outer-city (1,535 days), so the models largely learn to predict the majority class.
+**SIR is the least crowded inner-city mode on ~90% of days.** Metro-North is the least crowded outer-city option on ~86% of days. However, accuracy figures are inflated by class imbalance. SIR dominates inner-city labels (1,610 of 1,776 days) and Metro-North dominates outer-city (1,535 days), so the models largely learn to predict the majority class.
 
 ---
 
